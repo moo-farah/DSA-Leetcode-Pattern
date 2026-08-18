@@ -114,3 +114,7 @@ const counter = new Counter(10)
 console.log(counter.increment()) // 11
 console.log(counter.increment()) // 12
 console.log(counter.increment()) // 13
+```
+
+**Day: 3** 
+Continuos on the closure for day 3 as well.
