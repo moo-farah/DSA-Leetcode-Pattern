@@ -2,19 +2,20 @@
 // passing in the retun value from the calculation on the preceding element. 
 
 function reducer(nums, fn, init) {
-    let result = init;
-    for (let i = 0; i < nums.length; i++) {
-        result = fn(result, nums[i]);
+    let res = init;
+    for ( let i = 0; i < nums.length; i++){
+        res = fn(res, nums[i])
     }
-    return result;
+    return res;
+    // return nums.reduce(fn, init);
 }
 
-result = reducer([1, 2, 3, 4, 5],(acc, curr) => acc + curr, 0);
-console.log(result); // Output: 15
+res = reducer([1, 2, 3, 4],(acc, curr) => acc + curr, 0);
+console.log(res); // Output: 23
 
- // Here's a breakdown of how the reducer function works:
- // 0 + 1 = 1
- // 1 + 2 = 3
- // 3 + 3 = 6
- // 6 + 4 = 10
- // 10 + 5 = 15
+// Here's a breakdown of how the reducer function works:
+// initial value 0 
+// acc + curr = 0 + 1 = 1
+// acc + curr = 1 + 2 = 3
+// acc + curr = 3 + 3 = 6
+// acc + curr = 6 + 4 = 10
