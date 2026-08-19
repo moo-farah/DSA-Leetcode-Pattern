@@ -3,12 +3,17 @@
 // arr[i] number from the arr
 // i index of arr[i]
 
-function filter(arr, fn) {
-    const filteredArr = [];
-    for (let i = 0; i < arr.length; i++) {
+/**
+ * @param {number[]} arr
+ * @param {Function} fn
+ * @return {number[]}
+ */
+var filter = function(arr, fn) {
+    const res = [];
+    for (let i = 0; i < arr.length; i++){
         if(fn(arr[i], i)) {
-            filteredArr.push(arr[i]);
+            res.push(arr[i]);
         }
     }
-    return filteredArr;
-}
+    return res;
+};
