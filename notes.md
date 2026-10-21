@@ -118,3 +118,9 @@ console.log(counter.increment()) // 13
 
 **Day: 3** 
 Continuos on the closure for day 3 as well.
+
+**Day: 8**
+Function composition: 
+Is a way of combining several functions to create a new function
+``` 
+
